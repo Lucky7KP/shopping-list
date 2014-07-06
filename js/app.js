@@ -16,7 +16,7 @@ $(document).ready(function() {
 		if(!$.trim($('#item').val())) {
 			alert('Please enter text to add to the list');
 		} else {
-			$('<li class="items"></li>').appendTo('#list').html('<div class="box"></div><span>' + txtval + '</span><img class="delete" src="images/delete.png"/>');
+			$('<li class="items"></li>').appendTo('#list').html('<div class="box"></div><span>' + txtval + '</span><div class="delete"></div>');
 
 		document.getElementById('item').value = '';
 		};
@@ -26,7 +26,7 @@ $(document).ready(function() {
 	$('#list').on('click', '.delete', function(e){e.preventDefault(); $(this).parent().remove()});
 
 //cross off list items
-	$('#list').on('click', 'li', function(){$(this).toggleClass('strike'); $(this).children('.box').toggleClass('Checked');});
+	$('#list').on('click', 'li', function(){$(this).toggleClass('strike'); $(this).children('.box').toggleClass('checked');});
 
 //sortable list items
 	$('#list').sortable({ axis: "y" });
