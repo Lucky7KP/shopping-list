@@ -1,0 +1,110 @@
+body {
+	background-color: #E0E0E0; 
+	font-family: Verdana, sans-serif;
+}
+/*top of page*/
+header {
+	background-color: #6699FF;
+	width: 420px;
+	height: 25px;
+	padding: 10px 15px 15px 15px;
+	margin: auto;
+	margin-top: 75px;
+	text-align: center;
+	-webkit-border-top-left-radius: 5px;
+		-moz-border-top-left-radius: 5px;
+			border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+		-moz-border-top-right-radius: 5px;
+			border-top-right-radius: 5px;
+}
+.title-txt {
+	width: 250px;
+	padding-top: 5px;
+	font-size: 20px;
+	font-weight: bold;
+	color: #FFFFFF;
+	float: left;
+	text-align: right;
+}
+#img-cart{
+	padding-left: 15px;
+	float: left;
+}
+/*center of page */
+#main{
+	background-color: #FFFFFF;
+	width: 410px;
+	padding: 15px 20px 55px 20px;
+	margin: 0 auto;
+}
+#item {
+	width: 315px;
+	height: 20px;
+	border-radius: 6px;
+	font-size: 15px;
+	vertical-align: middle;
+	padding-left: 5px;
+	float: left;
+}
+button {
+	height: 30px;
+	width: 75px;
+	background-color: #3366FF;
+	font-size: 14px;
+	color: #FFFFFF;
+	text-align: center;
+	border: 1px solid;
+	border-radius: 6px;
+	float: left;
+	position: relative;
+	padding: 5px 0 5px 0;
+	top: -3px;
+	margin-left: 5px;
+}
+/*list*/
+#list {
+	padding: 25px 0 0 10px;
+}
+.items {
+	padding-bottom: 10px;
+}
+.delete {
+	width: 15px;
+	height: 15px;
+	float: right;
+	padding-right: 25px;
+	background: url(../images/trashblk.png) no-repeat;
+}
+.reddelete {
+	width: 15px;
+	height: 15px;
+	float: right;
+	padding-right: 25px;
+	background: url(../images/trashred.png) no-repeat;
+}
+.box {
+	float: left;
+	margin-right: 5px;
+	height: 20px;
+	width: 20px;
+	background: url(../images/box.png) no-repeat;
+}
+.checked {
+	float: left;
+	margin-right: 5px;
+	height: 20px;
+	width: 20px;
+	background: url(../images/checkbox.png) no-repeat;
+}
+.strike {
+	text-decoration: line-through;
+}
+footer {
+	background-color: #6699FF;
+	width: 450px;
+	height: 15px;
+	margin: auto;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
