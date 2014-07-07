@@ -22,17 +22,20 @@ $(document).ready(function(){
 		};
 	});
 
-//delete list items
-	$('#list').on('click', '.delete', '.redelete', function(e){e.preventDefault(); $(this).parent().remove()});
-
-//cross off list items
-	$('#list').on('click', 'li', function(){$(this).toggleClass('strike'); $(this).children('.box').toggleClass('checked');});
-
 //change trash icon to red
 	$(".delete").mouseover(function (){
     	$(this).removeClass().addClass("reddelete");
 	}).mouseout(function(){
 		$(this).removeClass().addClass("delete");
 	});
+
+//delete list items
+	$('#list').on('click', '.delete', function(e){e.preventDefault(); $(this).parent().remove()});
+	$('#list').on('click', '.reddelete', function(e){e.preventDefault(); $(this).parent().remove()});
+
+//cross off list items
+	$('#list').on('click', 'li', function(){$(this).toggleClass('strike'); $(this).children('.box').toggleClass('checked');});
+
+
 });	
 
