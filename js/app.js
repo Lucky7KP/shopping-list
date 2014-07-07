@@ -36,11 +36,5 @@ $(document).ready(function(){
 //cross off list items
 	$('#list').on('click', 'li', function(){$(this).toggleClass('strike'); $(this).children('.box').toggleClass('checked');});
 
-	$(function() {
-    $('#list').sortable();
-    $('#list').disableSelection();
-  	});
-
-
 });	
 
