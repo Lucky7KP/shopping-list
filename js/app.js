@@ -5,7 +5,6 @@ $(document).ready(function(){
 			event.preventDefault();
 			$('#add').click();
 		};
-	});	
 
 //add list items
 	$('#add').click(function(){
@@ -34,4 +33,6 @@ $(document).ready(function(){
 //show delete button on mouse hover
 	$('#list').on('mouseenter', 'li', function(){$(this).children('.reddelete').toggleClass('show');});
 	$('#list').on('mouseleave', 'li', function(){$(this).children('.delete').toggleClass('show');});
+
+});	
 
