@@ -23,7 +23,7 @@ $(document).ready(function(){
 	});
 
 //delete list items
-	$('#list').on('click', '.delete', function(e){e.preventDefault(); $(this).parent().remove()});
+	$('#list').on('click', '.delete', '.reddelete' function(e){e.preventDefault(); $(this).parent().remove()});
 
 //cross off list items
 	$('#list').on('click', 'li', function(){$(this).toggleClass('strike'); $(this).children('.box').toggleClass('checked');});
