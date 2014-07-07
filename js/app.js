@@ -29,12 +29,10 @@ $(document).ready(function(){
 	$('#list').on('click', 'li', function(){$(this).toggleClass('strike'); $(this).children('.box').toggleClass('checked');});
 
 //change trash icon to red
-	$(".delete").mouseover(function () {
-    	$(this).removeClass().addClass(".reddelete");
-	})
-	.mouseout(function(){
-		$(this).removeClass().addClass(".delete");
+	$(".delete").mouseover(function (){
+    	$(this).removeClass().addClass("reddelete");
+	}).mouseout(function(){
+		$(this).removeClass().addClass("delete");
 	});
-
 });	
 
