@@ -29,8 +29,8 @@ $(document).ready(function(){
 	$('#list').on('click', 'li', function(){$(this).toggleClass('strike'); $(this).children('.box').toggleClass('checked');});
 
 //change trash can color
-	(".delete").hover(function () {
-    $(this).toggleClass(".reddelete");
+	$(".delete").hover(function () {
+    	$(this).toggleClass(".reddelete");
 });
 
 });	
