@@ -28,10 +28,13 @@ $(document).ready(function(){
 //cross off list items
 	$('#list').on('click', 'li', function(){$(this).toggleClass('strike'); $(this).children('.box').toggleClass('checked');});
 
-//change trash can color
-	$(".delete").hover(function () {
-    	$(this).toggleClass(".reddelete");
-});
+//change trash icon to red
+	$(".delete").mouseover(function () {
+    	$(this).removeClass().addClass(".reddelete");
+	})
+	.mouseout(function(){
+		$(this).removeClass().addClass(".delete");
+	});
 
 });	
 
