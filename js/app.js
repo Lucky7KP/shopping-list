@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function(){
  	// use enter to add list items
 	$('#item').keyup(function(event){
 		if(event.keyCode == 13) {
