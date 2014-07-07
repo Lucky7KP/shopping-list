@@ -28,10 +28,10 @@ $(document).ready(function(){
 //cross off list items
 	$('#list').on('click', 'li', function(){$(this).toggleClass('strike'); $(this).children('.box').toggleClass('checked');});
 
-	
-//show delete button on mouse hover
-	$('#list').on('mouseenter', 'li', function(){$(this).children('.reddelete').toggleClass('show');});
-	$('#list').on('mouseleave', 'li', function(){$(this).children('.delete').toggleClass('show');});
+//change trash can color
+	(".delete").hover(function () {
+    $(this).toggleClass(".reddelete");
+});
 
 });	
 
