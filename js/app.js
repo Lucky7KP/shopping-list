@@ -16,7 +16,7 @@ $(document).ready(function(){
 		if(!$.trim($('#item').val())) {
 			alert('Please enter text to add to the list');
 		} else {
-			$('<li class="items"></li>').appendTo('#list').html('<div class="box"></div><span>' + txtval + '</span><div class="delete"></div>');
+			$('<li class="items"></li>').append('#list').html('<div class="box"></div><span>' + txtval + '</span><div class="delete"></div>');
 
 		document.getElementById('item').value = '';
 		};
