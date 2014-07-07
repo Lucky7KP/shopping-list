@@ -29,7 +29,7 @@ $(document).ready(function(){
 	$('#list').on('click', 'li', function(){$(this).toggleClass('strike'); $(this).children('.box').toggleClass('checked');});
 
 //sortable list items
-	$('#items').sortable({ axis: "y" });
+	$('#list').sortable();
 	
 //show delete button on mouse hover
 	$('#list').on('mouseenter', 'li', function(){$(this).children('.reddelete').toggleClass('show');});
