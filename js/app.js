@@ -5,6 +5,7 @@ $(document).ready(function(){
 			event.preventDefault();
 			$('#add').click();
 		};
+	});
 
 //add list items
 	$('#add').click(function(){
